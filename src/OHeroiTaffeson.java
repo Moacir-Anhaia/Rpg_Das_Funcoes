@@ -87,7 +87,7 @@ public class OHeroiTaffeson {
 
     public static int atacar(int vidaMonstro, Random rand) {
 
-        int danoAtacar = rand.nextInt(4) + 8;
+        int danoAtacar = rand.nextInt(5) + 8; // dano entre 8 a 12
         boolean ataqueCritical = rand.nextInt(100) < 20;
 
         if (ataqueCritical) {
@@ -102,7 +102,7 @@ public class OHeroiTaffeson {
     }
 
     public static int ataqueDoMonstro(int vidaHeroi, Boolean defendendo, Random rand) {
-        int ataqueMonstro = rand.nextInt(10) + 5; // dano entre 5 e 15
+        int ataqueMonstro = rand.nextInt(11) + 5; // dano entre 5 e 15
         boolean critico = rand.nextInt(100) < 15; // 15% de chance crítico
         if (critico) {
             ataqueMonstro *= 2;
@@ -146,7 +146,7 @@ public class OHeroiTaffeson {
     }
 
     public static int ganharXP(Random rand, int xp) {
-        int xpGanhada = rand.nextInt(20) + 10;
+        int xpGanhada = rand.nextInt(21) + 10; // xp entre 10 a 30
 
         return xpGanhada;
     }
