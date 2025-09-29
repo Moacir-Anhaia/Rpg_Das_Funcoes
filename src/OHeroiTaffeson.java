@@ -146,7 +146,7 @@ public class OHeroiTaffeson {
     }
 
     public static int ganharXP(Random rand, int xp) {
-        int xpGanhada = rand.nextInt(10) + 20;
+        int xpGanhada = rand.nextInt(20) + 10;
 
         return xpGanhada;
     }
